@@ -9,7 +9,7 @@ import {
   FormText
 } from './styles';
 
-const Login = () => {
+const SignIn = ({ navigation }) => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#00261C" />
@@ -32,7 +32,7 @@ const Login = () => {
           <Button>
             <Text>ENTRAR</Text>
           </Button>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('SignUp')}>
             <FormText>Cadastre-se</FormText>
           </TouchableOpacity>
         </FormContainer>
@@ -41,4 +41,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
