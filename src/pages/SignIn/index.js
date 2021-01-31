@@ -4,10 +4,11 @@ import {
   Container,
   FormContainer,
   Button,
-  Input,
   MoneyIcon,
   FormText
 } from './styles';
+import Input from '../../components/Input';
+import ActionButton from '../../components/ActionButton';
 
 const SignIn = ({ navigation }) => {
   return (
@@ -29,9 +30,9 @@ const SignIn = ({ navigation }) => {
             placeholder="Senha"
             placeholderTextColor="#aabbbb"
           />
-          <Button>
+          <ActionButton onPress={() => {}}>
             <Text>ENTRAR</Text>
-          </Button>
+          </ActionButton>
           <TouchableOpacity onPress={() => navigation.push('SignUp')}>
             <FormText>Cadastre-se</FormText>
           </TouchableOpacity>
