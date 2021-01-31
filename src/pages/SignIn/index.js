@@ -3,7 +3,6 @@ import { Text, StatusBar, TouchableOpacity } from 'react-native';
 import {
   Container,
   FormContainer,
-  Button,
   MoneyIcon,
   FormText
 } from './styles';
@@ -22,13 +21,16 @@ const SignIn = ({ navigation }) => {
         />
         <FormContainer>
           <Input
+            name="username"
+            autoCapitalize="none"
+            textContentType="username"
             placeholder="Nome de usuário"
-            placeholderTextColor="#aabbbb"
           />
           <Input
+            name="password"
+            textContentType="password"
             secureTextEntry={true}
             placeholder="Senha"
-            placeholderTextColor="#aabbbb"
           />
           <ActionButton onPress={() => {}}>
             <Text>ENTRAR</Text>
