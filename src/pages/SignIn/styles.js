@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export const Container = styled.View`
-  background-color: #00261C;
+  background-color: #131B26;
   flex: 1;
   justify-content: center;
 `;

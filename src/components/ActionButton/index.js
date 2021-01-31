@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Button } from './styles';
+import { Button, ButtonText } from './styles';
 
 const ActionButton = ({children, ...rest}) => (
   <Button {...rest}>
-    {children}
+    <ButtonText>{children}</ButtonText>
   </Button>
 );
 

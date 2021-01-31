@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StatusBar, TouchableOpacity } from 'react-native';
+import { StatusBar, TouchableOpacity } from 'react-native';
 import {
   Container,
   FormContainer,
@@ -12,7 +12,7 @@ import ActionButton from '../../components/ActionButton';
 const SignIn = ({ navigation }) => {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#00261C" />
+      <StatusBar barStyle="light-content" backgroundColor="#131B26" />
       <Container>
         <MoneyIcon
           name="monetization-on"
@@ -33,7 +33,7 @@ const SignIn = ({ navigation }) => {
             placeholder="Senha"
           />
           <ActionButton onPress={() => {}}>
-            <Text>ENTRAR</Text>
+            ENTRAR
           </ActionButton>
           <TouchableOpacity onPress={() => navigation.push('SignUp')}>
             <FormText>Cadastre-se</FormText>

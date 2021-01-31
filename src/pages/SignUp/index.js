@@ -8,7 +8,7 @@ import { Container, Heading, ScrollView } from './styles';
 const SignUp = () => {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#00261C" />
+      <StatusBar barStyle="light-content" backgroundColor="#131B26" />
       <Container>
         <Heading>Criar Conta</Heading>
         <ScrollView
@@ -47,7 +47,7 @@ const SignUp = () => {
             placeholder="Confirmação de Senha"
           />
           <ActionButton>
-            <Text>CADASTRAR</Text>
+            CADASTRAR
           </ActionButton>
         </ScrollView>
       </Container>

@@ -1,12 +1,13 @@
 import React from 'react';
-
-import { Container } from './styles';
+import { Container, MyInput } from './styles';
 
 const Input = (props) => (
-  <Container
-    {...props}
-    placeholderTextColor="#aabbbb"
-  />
+  <Container>
+    <MyInput
+      {...props}
+      placeholderTextColor="#aabbbb"
+    />
+  </Container>
 );
 
 export default Input;
