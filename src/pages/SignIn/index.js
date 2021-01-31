@@ -16,7 +16,7 @@ const SignIn = ({ navigation }) => {
       <Container>
         <MoneyIcon
           name="monetization-on"
-          color="#ffffff"
+          color="#ccc"
           size={64}
         />
         <FormContainer>
