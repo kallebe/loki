@@ -8,6 +8,10 @@ const Bills = () => {
       <Container>
         <BillCard />
         <BillCard />
+        <BillCard />
+        <BillCard />
+        <BillCard />
+        <BillCard />
       </Container>
     </MainContainer>
   );
