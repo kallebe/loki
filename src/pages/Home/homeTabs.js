@@ -10,13 +10,13 @@ const Tab = createMaterialBottomTabNavigator();
 const HomeTabs = () => (
   <Tab.Navigator
     barStyle={{
-      backgroundColor: '#E27813',
+      backgroundColor: '#223F4D',
       overflow: 'hidden',
       borderTopLeftRadius: 16,
       borderTopRightRadius: 16,
     }}
     activeColor="#fff"
-    inactiveColor="#131B26"
+    inactiveColor="#0E141C"
     shifting={true}
   >
     <Tab.Screen
