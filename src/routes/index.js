@@ -4,17 +4,26 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 
-const Auth = createStackNavigator();
+import Home from '../pages/Home';
 
-const AuthRoutes = () => (
-  <Auth.Navigator
+const Stack = createStackNavigator();
+const isSignedIn = true;               // TODO: connect with api
+
+const StackRoutes = () => (
+  <Stack.Navigator
     screenOptions={{
       headerShown: false
     }}
   >
-    <Auth.Screen name="SignIn" component={SignIn} />
-    <Auth.Screen name="SignUp" component={SignUp} />
-  </Auth.Navigator>
+    {isSignedIn ? (
+      <Stack.Screen name="Home" component={Home} />
+    ) : (
+      <>
+        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+      </>
+    )}
+  </Stack.Navigator>
 );
 
-export default AuthRoutes;
+export default StackRoutes;

@@ -1,15 +1,16 @@
 import React from 'react';
-import { StatusBar, Text } from 'react-native';
+import { StatusBar } from 'react-native';
 import ActionButton from '../../components/ActionButton';
 import Input from '../../components/Input';
+import MainContainer from '../../components/MainContainer';
 
-import { Container, Heading, ScrollView } from './styles';
+import { Heading, ScrollView } from './styles';
 
 const SignUp = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#131B26" />
-      <Container>
+      <MainContainer>
         <Heading>Criar Conta</Heading>
         <ScrollView
           keyboardShouldPersistTaps='handled'
@@ -50,7 +51,7 @@ const SignUp = () => {
             CADASTRAR
           </ActionButton>
         </ScrollView>
-      </Container>
+      </MainContainer>
     </>
   );
 }

@@ -1,19 +1,19 @@
 import React from 'react';
 import { StatusBar, TouchableOpacity } from 'react-native';
 import {
-  Container,
   FormContainer,
   MoneyIcon,
   FormText
 } from './styles';
 import Input from '../../components/Input';
 import ActionButton from '../../components/ActionButton';
+import MainContainer from '../../components/MainContainer';
 
 const SignIn = ({ navigation }) => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#131B26" />
-      <Container>
+      <MainContainer center={true}>
         <MoneyIcon
           name="monetization-on"
           color="#ccc"
@@ -39,7 +39,7 @@ const SignIn = ({ navigation }) => {
             <FormText>Cadastre-se</FormText>
           </TouchableOpacity>
         </FormContainer>
-      </Container>
+      </MainContainer>
     </>
   );
 };
