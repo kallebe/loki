@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const BalanceContainer = styled.View`
-  background-color: #75E312;
+  background-color: #F1B112;
   padding: 32px;
   border-radius: 8px;
 `;
